@@ -53,7 +53,7 @@ Option | Description
 `-e` | (**Required**) Set `DS_LICENSE=accept` to accept the [OpsCenter licensing agreement](https://www.datastax.com/datastax-opscenter-license-terms).
 `-d` | (Recommended) Starts the container in the background.
 `-p` | Publish OpsCenter port on the host computer and allow remote access. For example map, the HTTP port to allow browser access `-p 8888:8888`.
-`-v` | (Optional) Bind mount local host directories to exposed volumes to [manage the configuration](#Managing-the-configuration) or [persist data](#Persisting-data). For example, `-v /dse/conf/opscenter:/conf`. 
+`-v` | (Optional) Bind mount local host directories to exposed volumes to [manage the configuration](#Managing-the-configuration) or [persist data](#Persisting-data). For example, `-v /dse/conf/opscenter:/config`. 
 `--name` |Assigns a name to the container.
 
 These are the most commonly used `docker run` switches used in deploying OpsCenter.  For a full list please see [docker run](https://docs.docker.com/engine/reference/commandline/run/) reference.
